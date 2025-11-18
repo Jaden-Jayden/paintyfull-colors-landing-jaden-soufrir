@@ -1,0 +1,52 @@
+min {
+	display: grid;
+	grid-template-areas:
+		"w"
+		"o"
+		"g"
+		"p"
+		"c"
+		"y";
+	width: 100%;
+}
+.orange {
+	background-color: orange;
+	grid-area: o;
+	height: 50vh;
+}
+.green {
+	background-color: green;
+	grid-area: g;
+	height: 50vh;
+}
+.purple {
+	background-color: purple;
+	grid-area: p;
+	height: 50vh;
+}
+.cyan {
+	background-color: cyan;
+	grid-area: c;
+	height: 50vh;
+}
+.yellow {
+	background-color: yellow;
+	grid-area: y;
+	height: 50vh;
+}
+
+@media screen and (width > 300px) {
+	main {
+		display: grid;
+		grid-template-areas:
+			"w"
+			"y w c p p"
+			"y w c p p";
+	}
+}
+@media screen and (width > 500px) {
+	main {
+		display: grid;
+		grid-template-areas: "w o g p c y ";
+	}
+}
